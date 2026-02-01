@@ -1,0 +1,38 @@
+<!-- Advisor Modal Overlay -->
+<div id="advisor-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+  <!-- Modal Container -->
+  <div class="relative bg-gradient-to-b from-[#f5eaea] to-white rounded-3xl max-w-md w-full max-h-[90vh] overflow-hidden shadow-2xl">
+
+    <!-- Close Button -->
+    <button id="modal-close" class="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center text-[#50000B] hover:scale-110 transition-transform">
+      <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.428 6.5719L6.5718 25.4281" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+        <path d="M25.4282 25.4281L6.57202 6.5719" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <!-- Modal Content -->
+    <div class="overflow-y-auto max-h-[90vh]">
+      <!-- Advisor Image -->
+      <div class="w-full aspect-[2/1] overflow-hidden">
+        <img id="modal-image" src="" alt="" class="w-full h-full object-cover object-top">
+      </div>
+
+      <!-- Advisor Info -->
+      <div class="p-6 pb-8">
+        <!-- Name & Title -->
+        <h3 id="modal-name" class="text-xl font-bold text-[#50000B] mb-2"></h3>
+        <p id="modal-title" class="text-sm text-[#7B1E2A] mb-4"></p>
+
+        <!-- Bio Text -->
+        <div id="modal-bio" class="text-sm text-[#50000B]/80 leading-relaxed space-y-3 max-h-[200px] overflow-y-auto pr-2 mb-6 scrollbar-thin">
+        </div>
+
+        <!-- Learn More Button -->
+        <a id="modal-link" href="#" class="block w-full py-3.5 bg-[#50000B] text-white text-center text-sm font-semibold uppercase tracking-wider rounded-full hover:bg-[#7B1E2A] transition-colors">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

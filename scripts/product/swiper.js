@@ -12,7 +12,7 @@ document.addEventListener("productComponentsLoaded", () => {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    mousewheel: false,
+    mousewheel: true,
     keyboard: {
       enabled: true,
     },

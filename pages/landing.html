@@ -18,9 +18,12 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"ec9a6c21600d4161aa74e6a2c77efad2","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="../styles/swiper.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../styles/table.css">
   <script src="../scripts/product/swiper.js"></script>
   <title>
@@ -52,7 +55,22 @@
   <script src="../scripts/comments/import-components.js"></script>
   <script src="../scripts/comments/swiper.js"></script>
   <script src="../scripts/welcome-kit/import-components.js"></script>
-
+  <script src="../scripts/how-to-enjoy/import-components.js"></script>
+  <script src="../scripts/gold-standard/import-components.js"></script>
+  <script src="../scripts/gold-standard/table.js"></script>
+  <script src="../scripts/common/open-image-modal.js"></script>
+  <script src="../scripts/common/open-video-modal.js"></script>
+  <script src="../scripts/product/accordion.js"></script>
+  <script src="../scripts/product/ambassador-swiper.js"></script>
+  <script src="../scripts/product/swiper-mobile.js"></script>
+  <script src="../scripts/toggle-section-1/import-components.js"></script>
+  <script src="../scripts/toggle-section-1/toggle.js"></script>
+  <script src="../scripts/brilliant-minds/import-components.js"></script>
+  <script src="../scripts/physicians-nutrition-expert/import-components.js"></script>
+  <script src="../scripts/physicians-nutrition-expert/swiper.js"></script>
+  <script src="../scripts/ambasador/import-components.js"></script>
+  <script src="../scripts/ambasador/swiper.js"></script>
+  <script src="../scripts/monthly-breakdown/import-components.js"></script>
   <meta name="description" content="IM8 Daily Ultimate Essentials combines 92 nutrient-rich ingredients into a clinically proven, all-in-one drink, replacing 16 capsules for daily ultimate nutrition.">
 
 </head>
@@ -62,11 +80,14 @@
 
   <div id="currency-modal-container" class="hidden md:block"></div>
 
+  <div id="product-image-modal-container"></div>
+  <div id="product-video-modal-container"></div>
   <!-- Desktop Header -->
   <header class="hidden md:flex items-center justify-between px-[20px] md:px-[50px] py-1 md:py-2 ">
     <div id="left-header-container"></div>
     <div id="logo-container"></div>
     <div id="right-header-container"></div>
+
   </header>
 
   <!-- Mobile Header (stays on top) -->
@@ -95,6 +116,8 @@
         </div>
       </div>
 
+      <div id="product-mobile-images-container" class="block md:hidden"></div>
+
       <!-- Right Column: Product Info -->
       <div>
         <div id="product-review-container"></div>
@@ -104,13 +127,57 @@
         <div id="product-plan-selection-container"></div>
         <div id="product-buy-button-container"></div>
         <div id="product-influencers-container"></div>
+        <div id="product-accordion-container"></div>
+        <div id="product-what-ambasador-say-container"></div>
       </div>
     </div>
 
     <div id="clinically-proven-container"></div>
     <div id="scrolling-comments-container"></div>
+
+
+    <!-- Toggle Section 1 -->
+    <section class="relative overflow-hidden py-20 lg:py-32" id="organ-systems" style="background: repeating-linear-gradient(0deg, transparent 0px, transparent 50px, rgba(164, 0, 17, 0.06) 50px, rgba(164, 0, 17, 0.06) 51px), repeating-linear-gradient(90deg, transparent 0px, transparent 50px, rgba(164, 0, 17, 0.04) 50px, rgba(164, 0, 17, 0.04) 51px), linear-gradient(180deg, #F5EAEA 0%, #FDF8F8 15%, #F9F1F1 40%, #F5EAEA 70%, rgba(164, 0, 17, 0.06) 100%);">
+
+      <div id="toggle-bg-grid-container"></div>
+      <!-- Container -->
+      <div class="relative z-10 max-w-7xl mx-auto px-5 lg:px-16">
+
+        <div id="product-toggle-container"></div>
+
+        <!-- Content Panel - Essentials -->
+        <div id="content-essentials" class="transition-opacity duration-500">
+          <div id="header-essentials-container"></div>
+
+
+          <!-- Interactive Grid Layout -->
+          <div class="grid lg:grid-cols-[minmax(320px,440px)_1fr] gap-8 lg:gap-16 items-start">
+            <div id="card-grid-essentials-container"></div>
+            <div id="detail-essentials-container"></div>
+          </div>
+        </div>
+        <!-- Content Panel - Longevity (Hidden by default) -->
+        <div id="content-longevity" class="hidden transition-opacity duration-500">
+          <div id="header-longevity-container"></div>
+
+          <!-- Interactive Grid Layout - Longevity -->
+          <div class="grid lg:grid-cols-[minmax(280px,360px)_1fr] gap-8 lg:gap-16 items-start">
+            <div id="card-grid-longevity-container"></div>
+            <div id="detail-longevity-container"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="monthly-breakdown-breakdown-container"></div>
+    <div id="gold-standard-table-container"></div>
+    <div id="product-ambassador-say-container"></div>
+    <div id="physicians-nutrition-expert-video-list-container"></div>
     <div id="whats-inside-container"></div>
+    <div id="how-to-enjoy-tutorial-container"></div>
     <div id="welcome-kit-container"></div>
+    <div id="ambasador-video-list-container"></div>
+    <div id="brilliant-minds-container"></div>
     <div id="beckham-stack-table-container"></div>
     <div id="premium-container"></div>
     <div id="faq-container"></div>
