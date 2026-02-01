@@ -1,0 +1,34 @@
+<!-- Format Selection -->
+<div class="mb-6 px-[20px] md:px-[40px] py-[12px] ">
+  <h3 class="font-bold text-[16px] text-[#50000B] mb-3">1. Select Format:</h3>
+  <div class="grid grid-cols-2 gap-3">
+    <!-- Forever Jar -->
+    <div class="relative">
+      <input type="radio" id="format-jar" name="format" class="format-radio hidden" checked>
+      <label for="format-jar" class="format-label flex items-center gap-3 bg-[#F5EAEA] overflow-hidden border border-[#50000B] rounded-xl cursor-pointer transition-all hover:border-[#a40011]" onclick="changeImage('https://im8health.com/cdn/shop/files/pdp_essentials-jar_carousel01.jpg?v=1761040602')">
+        <img src="//im8health.com/cdn/shop/files/UX-Input_1.jpg?v=8068906590217553853" class="w-[60px] h-auto object-contain" alt="Forever Jar">
+        <div class="flex-1">
+          <div class="flex items-center justify-between mb-1">
+            <span class="font-semibold text-sm text-[#50000B]">Forever Jar</span>
+          </div>
+          <p class="text-xs text-gray-600">(354g)</p>
+          <p class="text-xs font-medium text-[#50000B] mt-1">$2.61 USD / serving</p>
+        </div>
+      </label>
+      <span class="top-[-10px] right-3 absolute bg-[#a40011] text-white text-[9px] font-bold px-2 py-0.5 rounded-full uppercase">MOST POPULAR</span>
+    </div>
+
+    <!-- Single-Serve Sachets -->
+    <div>
+      <input type="radio" id="format-sachets" name="format" class="format-radio hidden">
+      <label for="format-sachets" class="format-label bg-white flex items-center gap-3 overflow-hidden border border-[#50000B] rounded-xl cursor-pointer transition-all hover:border-[#a40011]" onclick="changeImage('https://im8health.com/cdn/shop/files/pdp_essentials-sachet_carousel01.jpg?v=1761040602')">
+        <img src="//im8health.com/cdn/shop/files/UX-Input_2.jpg?v=4366596284312861834" class="w-[60px] h-auto object-contain" alt="Sachets">
+        <div class="flex-1">
+          <span class="font-semibold text-sm text-[#50000B] block mb-1">Single-Serve Sachets</span>
+          <p class="text-xs text-gray-600">(354g)</p>
+          <p class="text-xs font-medium text-[#50000B] mt-1">$2.91 USD / serving</p>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>

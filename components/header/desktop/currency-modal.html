@@ -1,0 +1,266 @@
+<div id="currencyModal" class="hidden absolute top-0 right-0 z-10 flex items-start justify-end pt-10 pr-20 border-1 border-[#50000b1a]">
+  <!-- Modal Content -->
+  <div class="bg-white w-80 max-h-[80vh] overflow-hidden shadow-md flex flex-col nb-architect text-[14px]">
+    <!-- Search Header -->
+    <div class="sticky top-0 bg-white px-6 py-3">
+
+      <div class="relative">
+        <!-- Outer thicker border -->
+        <div class="border-2 border-[rgba(80,0,11,1)] p-[1px]">
+          <!-- Inner lighter border with gap -->
+          <div class="border border-[rgba(80,0,11,0.4)]  px-2 py-1">
+            <label for="currencySearch" class="block text-[12px] text-[rgba(80,0,11,0.75)] uppercase tracking-wide mb-2">Search</label>
+            <input type="text" id="currencySearch" class="w-full  text-sm outline-none text-[rgba(80,0,11,0.75)]" placeholder="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Country List -->
+    <ul role="list" class="overflow-y-auto flex-1 max-h-[30vh]">
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="AU" id="Australia">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Australia</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">AUD $</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="BE" id="Belgium">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Belgium</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">EUR €</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="CA" id="Canada">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Canada</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">CAD $</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="FR" id="France">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">France</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">EUR €</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="DE" id="Germany">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Germany</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">EUR €</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="HK" id="Hong Kong SAR">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Hong Kong SAR</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">HKD $</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="HU" id="Hungary">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Hungary</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">HUF Ft</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="ID" id="Indonesia">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Indonesia</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">IDR Rp</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="IL" id="Israel">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Israel</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">ILS ₪</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="IT" id="Italy">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Italy</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">EUR €</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="JP" id="Japan">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Japan</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">JPY ¥</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="LT" id="Lithuania">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Lithuania</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">EUR €</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="MY" id="Malaysia">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Malaysia</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">MYR RM</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="NL" id="Netherlands">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Netherlands</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">EUR €</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="NZ" id="New Zealand">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">New Zealand</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">NZD $</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="PH" id="Philippines">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Philippines</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">PHP ₱</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="PL" id="Poland">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Poland</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">PLN zł</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="RO" id="Romania">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Romania</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">RON Lei</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="SA" id="Saudi Arabia">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Saudi Arabia</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">SAR ر.س</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="SG" id="Singapore">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Singapore</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">SGD $</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="KR" id="South Korea">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">South Korea</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">KRW ₩</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="SE" id="Sweden">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Sweden</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">SEK kr</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="CH" id="Switzerland">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Switzerland</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">CHF CHF</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="TW" id="Taiwan">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">Taiwan</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">TWD $</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="AE" id="United Arab Emirates">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">United Arab Emirates</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">AED د.إ</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="GB" id="United Kingdom">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold"></span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">United Kingdom</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">GBP £</span>
+          </div>
+        </a>
+      </li>
+      <li tabindex="-1">
+        <a class="block px-4 py-3 text-sm transition-colors hover:bg-[rgba(80,0,11,0.05)] hover:font-bold cursor-pointer" href="#" data-value="US" id="United States">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-5 text-center text-[rgba(80,0,11,1)] font-bold">✓</span>
+            <span class="flex-1 font-medium text-[rgba(80,0,11,0.75)]">United States</span>
+            <span class="currency-display text-[rgba(80,0,11,0.75)] text-opacity-0 group-hover:text-opacity-100 transition-all opacity-0 group-hover:opacity-100">USD $</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</div>

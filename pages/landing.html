@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+  <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" as="script" crossorigin>
+  <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.cells.min.js" as="script" crossorigin>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="icon" type="image/png" href="//im8health.com/cdn/shop/files/im8health_favicon.svg?crop=center&height=32&v=1731677217&width=32">
+  <link href="https://db.onlinewebfonts.com/c/781bc78d102a85d51a4e41734c2fe072?family=F." rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="../styles/swiper.css">
+  <link rel="stylesheet" href="../styles/table.css">
+  <script src="../scripts/product/swiper.js"></script>
+  <title>
+    IM8 Daily Ultimate Essentials: 92 Nutrients in One Delicious Drink
+    &ndash; IM8 Health</title>
+
+  <link rel="stylesheet" href="../styles/plan-selection.css">
+  <script src="../scripts/header/import-components.js"></script>
+  <script src="../scripts/header/mobile/toggle-menu.js"></script>
+  <script src="../scripts/header/desktop/open-localization.js"></script>
+  <script src="../scripts/header/desktop/open-shop-hover.js"></script>
+  <script src="../scripts/header/desktop/open-discover-hover.js"></script>
+  <script src="../scripts/header/mobile/open-localization.js"></script>
+  <script src="../scripts/product/import-components.js"></script>
+  <script src="../scripts/product/toggle-result.js"></script>
+  <script src="../scripts/product/format-selection.js"></script>
+  <script src="../scripts/product/buy-button.js"></script>
+  <script src="../scripts/footer/import-components.js"></script>
+  <script src="../scripts/faq/import-components.js"></script>
+  <script src="../scripts/faq/toggle-faq.js"></script>
+  <script src="../scripts/footer/toggle-footer.js"></script>
+  <script src="../scripts/product/select-plan.js"></script>
+  <script src="../scripts/product/change-main-image.js"></script>
+  <script src="../scripts/clinically-proven/import-components.js"></script>
+  <script src="../scripts/clinically-proven/counter.js"></script>
+  <script src="../scripts/premium/import-components.js"></script>
+  <script src="../scripts/beckham-stack/import-components.js"></script>
+  <script src="../scripts/whats-inside/import-components.js"></script>
+  <script src="../scripts/comments/import-components.js"></script>
+  <script src="../scripts/comments/swiper.js"></script>
+  <script src="../scripts/welcome-kit/import-components.js"></script>
+
+  <meta name="description" content="IM8 Daily Ultimate Essentials combines 92 nutrient-rich ingredients into a clinically proven, all-in-one drink, replacing 16 capsules for daily ultimate nutrition.">
+
+</head>
+
+<body>
+  <div id="discount-container"></div>
+
+  <div id="currency-modal-container" class="hidden md:block"></div>
+
+  <!-- Desktop Header -->
+  <header class="hidden md:flex items-center justify-between px-[20px] md:px-[50px] py-1 md:py-2 ">
+    <div id="left-header-container"></div>
+    <div id="logo-container"></div>
+    <div id="right-header-container"></div>
+  </header>
+
+  <!-- Mobile Header (stays on top) -->
+  <div id="mobile-header-container" class="md:hidden sticky top-0 z-[15] bg-white"></div>
+
+  <!-- Mobile Menu Overlay (fixed, slides from left, below header) -->
+  <div id="menu-container" class="fixed inset-0 top-[56px] z-[10] md:hidden pointer-events-none opacity-0 transition-opacity duration-300">
+    <!-- Drawer -->
+    <div id="menu-drawer" class="absolute top-20 left-0 h-full w-full bg-white overflow-y-auto transform -translate-x-full transition-transform duration-300 ease-out">
+      <div id="mobile-nav-drawer-container"></div>
+      <div id="currency-modal-mobile-container" class="relative"></div>
+    </div>
+  </div>
+
+
+
+  <div id="content">
+    <div class="grid grid-cols-1 md:grid-cols-2 bg-[linear-gradient(180deg,_#a400110d,_#FFFFFF,_#FFFFFF)]">
+      <!-- Left Column: Product Images (Sticky with max height) -->
+      <div class="flex flex-col h-full">
+        <div class="sticky top-20 max-h-[calc(100vh-80px)] overflow-y-hidden">
+          <div id="desktop-product-images" class="flex justify-between gap-4 px-[20px] md:px-[40px] py-[12px]">
+            <div id="product-desktop-images-container"></div>
+            <div id="product-desktop-main-image"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Product Info -->
+      <div>
+        <div id="product-review-container"></div>
+        <div id="product-info-container"></div>
+        <div id="product-result-container"></div>
+        <div id="product-format-selection-container"></div>
+        <div id="product-plan-selection-container"></div>
+        <div id="product-buy-button-container"></div>
+        <div id="product-influencers-container"></div>
+      </div>
+    </div>
+
+    <div id="clinically-proven-container"></div>
+    <div id="scrolling-comments-container"></div>
+    <div id="whats-inside-container"></div>
+    <div id="welcome-kit-container"></div>
+    <div id="beckham-stack-table-container"></div>
+    <div id="premium-container"></div>
+    <div id="faq-container"></div>
+    <div id="desktop-footer-container"></div>
+    <div id="mobile-footer-container"></div>
+  </div>
+
+</body>
+
+</html>

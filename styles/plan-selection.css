@@ -1,0 +1,26 @@
+  .plan-label {
+    transition: all 0.3s ease;
+  }
+
+  .plan-label.selected {
+    opacity: 0.85 !important;
+    background: linear-gradient(120deg, rgba(245, 234, 234, 0.80) 0%, rgba(255, 242, 237, 0.60) 100%) !important;
+    box-shadow: 0 4px 12px 0 rgba(164, 0, 17, 0.15) !important;
+    border-color: #A40011 !important;
+  }
+
+  /* Hide circle by default */
+  .plan-checkbox .circle {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  /* Show circle when selected */
+  .plan-label.selected .plan-checkbox .circle {
+    opacity: 1 !important;
+  }
+
+  /* Change cart icon to red when selected */
+  .plan-label.selected .plan-checkbox .cart-icon {
+    filter: brightness(0) saturate(100%) invert(18%) sepia(92%) saturate(1000%) hue-rotate(330deg) brightness(0.8);
+  }

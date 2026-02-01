@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'abc-arizona';
+  src: url('../assets/fonts/fonnts.com-1255/fonts/fonnts.com-ABCArizonaFlareVariable-Trial.ttf') format('truetype');
+  font-display: swap;
+}
+
+
+body {
+    font-family: 'Aeonik',  sans-serif;
+}
+
+/* Mobile menu scroll lock */
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+.nb-architect{
+    font-family: 'F.', sans-serif;
+}
+
+.abc-arizona {
+    font-family: 'abc-arizona', sans-serif;
+}
+
+ .star-glow {
+      filter: drop-shadow(0 0 1px rgba(164, 0, 17, 0.8)) drop-shadow(0 0 1px rgba(164, 0, 17, 0.6));
+    }

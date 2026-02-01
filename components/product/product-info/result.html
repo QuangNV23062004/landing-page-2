@@ -1,0 +1,83 @@
+<div class="px-[20px] md:px-[40px] my-6">
+  <div class="max-w-[750px] mx-auto bg-[#e8f4e8] border-2 border-[#7d9b7d] rounded-[20px] p-6 md:p-8">
+    <!-- Header -->
+    <div class="flex justify-between items-center flex-wrap gap-4 mb-6">
+      <h2 class="text-[#50000B] text-2xl md:text-[28px] font-bold">Clinically Proven Results</h2>
+      <div class="bg-[#2d6b3d] text-white px-5 py-2.5 rounded-full font-bold text-[13px] tracking-wide">
+        90-DAY CLINICAL STUDY
+      </div>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 mb-5">
+      <!-- Stat 1 -->
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2.5">
+          <span class="text-[32px]">⚡</span>
+          <span class="text-[#2d6b3d] text-[30px] md:text-[36px] font-bold">95%</span>
+        </div>
+        <div class="text-[#50000B] text-sm md:text-[15px] font-semibold">More energy</div>
+      </div>
+
+      <!-- Stat 2 -->
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2.5">
+          <span class="text-[32px]">🦠</span>
+          <span class="text-[#2d6b3d] text-[30px] md:text-[36px] font-bold">85%</span>
+        </div>
+        <div class="text-[#50000B] text-sm md:text-[15px] font-semibold">Better gut health</div>
+      </div>
+
+      <!-- Stat 3 -->
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2.5">
+          <span class="text-[32px]">😴</span>
+          <span class="text-[#2d6b3d] text-[30px] md:text-[36px] font-bold">80%</span>
+        </div>
+        <div class="text-[#50000B] text-sm md:text-[15px] font-semibold">Better sleep quality</div>
+      </div>
+
+      <!-- Stat 4 -->
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2.5">
+          <span class="text-[32px]">🧠</span>
+          <span class="text-[#2d6b3d] text-[30px] md:text-[36px] font-bold">70%</span>
+        </div>
+        <div class="text-[#50000B] text-sm md:text-[15px] font-semibold">Sharper focus</div>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <p class="text-gray-600 text-[13px] italic mb-6">
+      *Based on 12-week randomized controlled trial by San Francisco Research Institute
+    </p>
+
+    <!-- Accordion -->
+    <div class="mt-5">
+      <div class="grid grid-cols-2 gap-4 items-end">
+        <!-- Button - always in row 1, left side -->
+        <button onclick="toggleAccordion()" class="flex items-center gap-2 border-b-2 border-[#50000B] text-[#50000B] text-base font-bold pb-1 hover:opacity-80 transition-opacity w-fit col-start-1 row-start-1">
+          Why These Results Matter?
+          <img id="accordionIcon" class="text-sm transition-transform duration-300" src="../assets/icons/dropdown-arrow.svg" alt="dropdown-arrow">
+        </button>
+
+        <!-- Images - start in row 1, move to row 2 when open, always on right side -->
+        <div id="imagesContainer" class=" flex gap-2.5 items-center justify-end transition-all duration-300 col-start-2 row-start-1">
+          <img src="https://im8health.com/cdn/shop/files/Vector_38d1c63f-d300-48b5-b6e6-084b0cf0086d.png?v=1764063546&width=100" class="h-[60px] md:h-[70px] w-auto border-2 border-[#6b4c3a] rounded-lg p-2 bg-white" alt="NSF Certified for Sport">
+          <img src="https://im8health.com/cdn/shop/files/NSF_CONTENTS_CERTIFIED_White_Vert_2.png?v=1764063546&width=100" alt="NSF Contents Certified" class="h-[60px] md:h-[70px] w-auto border-2 border-[#6b4c3a] rounded-lg p-2 bg-white">
+          <img src="https://im8health.com/cdn/shop/files/b9a15702-8e60-441d-b1fd-ce12f6742dcb_svg.png?v=1764063545&width=100" alt="Non GMO" class="h-[60px] md:h-[70px] w-auto border-2 border-[#6b4c3a] rounded-lg p-2 bg-white">
+        </div>
+
+        <!-- Content - expands in row 2, left side (col-span-2 on mobile) -->
+        <div id="accordionContent" class="hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out col-span-2 lg:col-span-1 col-start-1 row-start-2 lg:col-start-2">
+          <div class="mt-5">
+            <p class="text-[#50000B] text-[15px] leading-relaxed">
+              Unlike most supplements with unverified claims, IM8 is backed by a 12-week randomized controlled clinical trial. Every ingredient is NSF Certified for Sport, verifying exact dosages and testing for 280+ banned substances - the same certification trusted by world-class athletes like Aryna Sabalenka, World No. 1 tennis player.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

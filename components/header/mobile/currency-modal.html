@@ -1,0 +1,270 @@
+<div id="currency-modal-mobile" class="hidden fixed inset-0 z-50 flex items-end bg-black/50">
+  <!-- Modal Content -->
+  <div class="bg-white w-full max-h-[70vh] flex flex-col  transform translate-y-full transition-transform duration-300 ease-out" id="currency-modal-panel">
+    <!-- Search Header -->
+    <div class="flex justify-center items-center gap-3 px-4 py-4">
+      <div class="flex justify-center items-center border border-[#50000B]">
+
+        <div class="flex flex-row items-center justify-center px-4 py-2">
+          <input type="text" id="currencySearch" class="flex-1 text-[#50000B] text-sm outline-none bg-transparent text-[#50000B]" placeholder="SEARCH">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#50000B]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+      </div>
+
+      <button id="close-currency-modal" class="text-[#50000B] text-xl leading-none ml-2">&times;</button>
+    </div>
+
+    <!-- Country List -->
+    <ul role="list" class="overflow-y-auto flex-1 py-2">
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="AU">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Australia</span>
+          </div>
+          <span class="text-[#50000B] text-sm">AUD $</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="BE">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Belgium</span>
+          </div>
+          <span class="text-[#50000B] text-sm">EUR €</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="CA">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Canada</span>
+          </div>
+          <span class="text-[#50000B] text-sm">CAD $</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="FR">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">France</span>
+          </div>
+          <span class="text-[#50000B] text-sm">EUR €</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="DE">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Germany</span>
+          </div>
+          <span class="text-[#50000B] text-sm">EUR €</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="HK">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Hong Kong SAR</span>
+          </div>
+          <span class="text-[#50000B] text-sm">HKD $</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="HU">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Hungary</span>
+          </div>
+          <span class="text-[#50000B] text-sm">HUF Ft</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="ID">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Indonesia</span>
+          </div>
+          <span class="text-[#50000B] text-sm">IDR Rp</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="IL">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Israel</span>
+          </div>
+          <span class="text-[#50000B] text-sm">ILS ₪</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="IT">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Italy</span>
+          </div>
+          <span class="text-[#50000B] text-sm">EUR €</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="JP">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Japan</span>
+          </div>
+          <span class="text-[#50000B] text-sm">JPY ¥</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="LT">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Lithuania</span>
+          </div>
+          <span class="text-[#50000B] text-sm">EUR €</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="MY">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Malaysia</span>
+          </div>
+          <span class="text-[#50000B] text-sm">MYR RM</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="NL">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Netherlands</span>
+          </div>
+          <span class="text-[#50000B] text-sm">EUR €</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="NZ">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">New Zealand</span>
+          </div>
+          <span class="text-[#50000B] text-sm">NZD $</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="PH">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Philippines</span>
+          </div>
+          <span class="text-[#50000B] text-sm">PHP ₱</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="PL">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Poland</span>
+          </div>
+          <span class="text-[#50000B] text-sm">PLN zł</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="RO">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Romania</span>
+          </div>
+          <span class="text-[#50000B] text-sm">RON Lei</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="SA">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Saudi Arabia</span>
+          </div>
+          <span class="text-[#50000B] text-sm">SAR ر.س</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="SG">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Singapore</span>
+          </div>
+          <span class="text-[#50000B] text-sm">SGD $</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="KR">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">South Korea</span>
+          </div>
+          <span class="text-[#50000B] text-sm">KRW ₩</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="SE">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Sweden</span>
+          </div>
+          <span class="text-[#50000B] text-sm">SEK kr</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="CH">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Switzerland</span>
+          </div>
+          <span class="text-[#50000B] text-sm">CHF</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="TW">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">Taiwan</span>
+          </div>
+          <span class="text-[#50000B] text-sm">TWD $</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="AE">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">United Arab Emirates</span>
+          </div>
+          <span class="text-[#50000B] text-sm">AED د.إ</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="GB">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]"></span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">United Kingdom</span>
+          </div>
+          <span class="text-[#50000B] text-sm">GBP £</span>
+        </a>
+      </li>
+      <li>
+        <a class="flex items-center justify-between px-4 py-3 hover:bg-[#50000B]/5 cursor-pointer" href="#" data-value="US">
+          <div class="flex items-center gap-3">
+            <span class="checkmark w-4 text-[#50000B]">✓</span>
+            <span class="text-[#50000B] uppercase tracking-wide text-sm">United States</span>
+          </div>
+          <span class="text-[#50000B] text-sm">USD $</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</li>
+</ul>
+</div>
+</div>
